@@ -216,7 +216,7 @@ h1.sm-heading,
 h2.sm-heading,
 h3.sm-heading {
   margin-bottom: 2rem;
-  padding: 0.2rem 1rem;
+  padding: 0 .2rem;
   background: rgba(33, 39, 43, 0.5);
 }
 
@@ -329,10 +329,17 @@ main#home h1 {
   -ms-grid-column: 1;
   grid-area: bioimage;
   margin: auto;
-  border-radius: 50%;
-  border: #31c6e4 3px solid;
-  width: 200px;
-  height: 220px;
+  border: #31c6e4 2px dashed;
+  width: 220px;
+  height: 285px;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.bio-image:hover {
+  border: #31c6e4 2px solid;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .bio {
@@ -508,7 +515,7 @@ main#home h1 {
   color: #333;
   margin: 0;
   font-weight: 500;
-  height: 90px;
+  height: 100px;
 }
 
 #main-footer {
@@ -578,6 +585,10 @@ main#home h1 {
   .projects {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+  }
+  .boxes div {
+    font-size: 1.2rem;
+    padding: 1rem 1.2rem;
   }
 }
 

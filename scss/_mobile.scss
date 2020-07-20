@@ -22,7 +22,6 @@
       line-height: 1;
       margin-bottom: 0.6rem;
     }
-    
   }
 
   .menu-nav,
@@ -63,6 +62,10 @@
 
   .projects {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .boxes div {
+    font-size: 1.2rem;
+    padding: 1rem 1.2rem;
   }
 }
 

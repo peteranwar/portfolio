@@ -29,7 +29,7 @@ h3 {
   }
   &.sm-heading {
     margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
+    padding: 0 .2rem;
     background: rgba(lighten($primary-color, 2), 0.5);
     // width: fit-content;
   }
@@ -123,10 +123,14 @@ main {
 .bio-image {
   grid-area: bioimage;
   margin: auto;
-  border-radius: 50%;
-  border: $secondary-color 3px solid;
-  width: 200px;
-  height: 220px;
+  border: $secondary-color 2px dashed;
+  width: 220px;
+  height: 285px;
+  @include easeInOut
+  &:hover {
+     border: $secondary-color 2px solid;
+     transform: scale(1.1);
+  }
 }
 
 .bio {
@@ -276,7 +280,7 @@ main {
   color: #333;
   margin: 0;
   font-weight: 500;
-  height: 90px;
+  height: 100px;
 }
 
 #main-footer {
