@@ -194,7 +194,10 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 0.7rem;
-
+   
+  .item {
+    margin-bottom: 1rem;
+  }
   img {
     width: 100%;
     height: 230px;
@@ -219,7 +222,7 @@ main {
       font-weight: 500;
       position: absolute;
       left: 50%;
-     top: 35%;
+      top: 35%;
       letter-spacing: 0.2rem;
       font-size: 1.5rem;
       text-transform: uppercase;

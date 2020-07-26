@@ -5,7 +5,7 @@
   right: 2.1rem;
   top: 2.1rem;
   cursor: pointer;
-  animation: scaling 1s alternate forwards infinite;
+  animation: scaling .9s alternate forwards infinite;
   @include easeInOut;
 
   .btn-line {
@@ -109,7 +109,7 @@
   .nav-item {
     transform: translate3d(600px, 0, 0);
     @include easeInOut;
-    margin-bottom: 1.6rem;
+    margin-bottom: 1.4rem;
 
     &.show {
       // slide in from right
@@ -128,10 +128,32 @@
     color: set-text-color($primary-color);
     text-decoration: none;
     @include easeInOut;
+    position: relative;
+    &:after{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      bottom: 10px;
+      background-color:  #ffeb3b;
+      z-index: -1;
+      transform: translateY(-20px);
+      opacity: 0;
+      // transform-origin: right;
+      @include easeInOut;
+
+      
+    }
 
     &:hover {
       color: #ffeb3b;
-      font-size: 2.7rem;
+      font-size: 2.2rem;
+    }
+    &:hover::after {
+      transform: translateY(0);
+      opacity: 1;
+      // transform-origin: left;
     }
   }
 }

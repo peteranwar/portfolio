@@ -4,10 +4,10 @@
   right: 2.1rem;
   top: 2.1rem;
   cursor: pointer;
-  -webkit-animation: scaling 1s alternate forwards infinite;
-          animation: scaling 1s alternate forwards infinite;
-  -webkit-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
+  -webkit-animation: scaling .9s alternate forwards infinite;
+          animation: scaling .9s alternate forwards infinite;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
 }
 
 .menu-btn .btn-line {
@@ -15,8 +15,8 @@
   height: 0.3rem;
   margin: 0 0 0.4rem 0;
   background: #fff;
-  -webkit-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
 }
 
 @-webkit-keyframes scaling {
@@ -62,8 +62,8 @@
 
 .menu-btn:hover .btn-line {
   background-color: #31c6e4;
-  -webkit-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
 }
 
 .menu {
@@ -101,12 +101,12 @@
 .menu-nav {
   margin: 0;
   padding: 0;
-  background: #121618;
+  background: #101416;
   list-style: none;
   -webkit-transform: translate3d(0, -100%, 0);
           transform: translate3d(0, -100%, 0);
-  -webkit-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
 }
 
 .menu-nav.show {
@@ -115,11 +115,11 @@
 }
 
 .menu-branding {
-  background: #1d2327;
+  background: #1b2125;
   -webkit-transform: translate3d(0, 100%, 0);
           transform: translate3d(0, 100%, 0);
-  -webkit-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
 }
 
 .menu-branding.show {
@@ -139,9 +139,9 @@
 .menu .nav-item {
   -webkit-transform: translate3d(600px, 0, 0);
           transform: translate3d(600px, 0, 0);
-  -webkit-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
-  margin-bottom: 1.6rem;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  margin-bottom: 1.4rem;
 }
 
 .menu .nav-item.show {
@@ -159,13 +159,36 @@
   padding: 1rem 0;
   color: #fff;
   text-decoration: none;
-  -webkit-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  position: relative;
+}
+
+.menu .nav-link:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 10px;
+  background-color: #ffeb3b;
+  z-index: -1;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
 }
 
 .menu .nav-link:hover {
   color: #ffeb3b;
-  font-size: 2.7rem;
+  font-size: 2.2rem;
+}
+
+.menu .nav-link:hover::after {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 .nav-item:nth-child(1) {
@@ -198,7 +221,7 @@
 }
 
 body {
-  background-color: #1d2327;
+  background-color: #1b2125;
   color: #fff;
   height: 100%;
   margin: 0;
@@ -220,7 +243,7 @@ body#bg-img .over-lay {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: rgba(29, 35, 39, 0.85);
+  background: rgba(27, 33, 37, 0.88);
 }
 
 h1,
@@ -241,7 +264,7 @@ h2.sm-heading,
 h3.sm-heading {
   margin-bottom: 2rem;
   padding: 0 .2rem;
-  background: rgba(33, 40, 45, 0.5);
+  background: rgba(31, 38, 43, 0.5);
 }
 
 .typing {
@@ -314,8 +337,8 @@ main .icons {
 
 main .icons a {
   padding: 0.7rem;
-  -webkit-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
 }
 
 main .icons a:hover {
@@ -323,8 +346,8 @@ main .icons a:hover {
 }
 
 main .icons a i {
-  -webkit-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
 }
 
 main .icons a i:hover {
@@ -356,8 +379,8 @@ main#home h1 {
   border: #31c6e4 2px dashed;
   width: 220px;
   height: 285px;
-  -webkit-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
 }
 
 .bio-image:hover {
@@ -389,13 +412,13 @@ main#home h1 {
   font-size: 18px;
   font-weight: 500;
   text-transform: capitalize;
-  -webkit-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
 }
 
 .job-1 span:hover {
-  border-color: #1d2327;
-  color: #1d2327;
+  border-color: #1b2125;
+  color: #1b2125;
   background-color: #eee;
 }
 
@@ -412,7 +435,7 @@ main#home h1 {
 }
 
 .job {
-  background: #283036;
+  background: #262e34;
   padding: 0.5rem;
   border-bottom: #31c6e4 3px solid;
 }
@@ -425,8 +448,8 @@ main#home h1 {
 .job p .cv-link i {
   color: #31c6e4;
   padding-top: .5rem;
-  -webkit-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
 }
 
 .job p .cv-link i:hover {
@@ -441,6 +464,10 @@ main#home h1 {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   grid-gap: 0.7rem;
+}
+
+.projects .item {
+  margin-bottom: 1rem;
 }
 
 .projects img {
@@ -461,8 +488,8 @@ main#home h1 {
 .projects .p-content:hover img {
   opacity: 0.3;
   border-color: #31c6e4;
-  -webkit-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
 }
 
 .projects .p-name {
@@ -477,8 +504,8 @@ main#home h1 {
   -webkit-transform: scale(0) translate(50%, 50%);
           transform: scale(0) translate(50%, 50%);
   color: #31c6e4;
-  -webkit-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
 }
 
 .boxes {
@@ -502,8 +529,8 @@ main#home h1 {
   padding: 1.5rem 2.5rem;
   margin-bottom: 3rem;
   cursor: pointer;
-  -webkit-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
 }
 
 .boxes div:hover {
@@ -525,8 +552,8 @@ main#home h1 {
 .btn:hover, .btn-light:hover, .p-dark:hover {
   background-color: #31c6e4;
   color: #000;
-  -webkit-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
 }
 
 .btn-light {
@@ -535,7 +562,7 @@ main#home h1 {
 }
 
 .p-dark {
-  background: #94a4af;
+  background: #91a2ae;
   color: #333;
   margin: 0;
   font-weight: 500;
@@ -545,7 +572,7 @@ main#home h1 {
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #07090a;
+  background: #050708;
   color: #fff;
   height: 2.8rem;
 }
