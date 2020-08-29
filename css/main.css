@@ -4,10 +4,10 @@
   right: 2.1rem;
   top: 2.1rem;
   cursor: pointer;
-  -webkit-animation: scaling .9s alternate forwards infinite;
-          animation: scaling .9s alternate forwards infinite;
-  -webkit-transition: all 0.4s ease-in;
-  transition: all 0.4s ease-in;
+  -webkit-animation: scaling 0.9s alternate forwards infinite;
+          animation: scaling 0.9s alternate forwards infinite;
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
 }
 
 .menu-btn .btn-line {
@@ -15,8 +15,8 @@
   height: 0.3rem;
   margin: 0 0 0.4rem 0;
   background: #fff;
-  -webkit-transition: all 0.4s ease-in;
-  transition: all 0.4s ease-in;
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
 }
 
 @-webkit-keyframes scaling {
@@ -62,8 +62,8 @@
 
 .menu-btn:hover .btn-line {
   background-color: #31c6e4;
-  -webkit-transition: all 0.4s ease-in;
-  transition: all 0.4s ease-in;
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
 }
 
 .menu {
@@ -105,8 +105,8 @@
   list-style: none;
   -webkit-transform: translate3d(0, -100%, 0);
           transform: translate3d(0, -100%, 0);
-  -webkit-transition: all 0.4s ease-in;
-  transition: all 0.4s ease-in;
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
 }
 
 .menu-nav.show {
@@ -118,8 +118,8 @@
   background: #1b2125;
   -webkit-transform: translate3d(0, 100%, 0);
           transform: translate3d(0, 100%, 0);
-  -webkit-transition: all 0.4s ease-in;
-  transition: all 0.4s ease-in;
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
 }
 
 .menu-branding.show {
@@ -134,13 +134,21 @@
   background: url(../img/portrait.jpg);
   border-radius: 50%;
   border: solid 3px #31c6e4;
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
+}
+
+.menu .portrait:hover {
+  border-radius: 10px;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 .menu .nav-item {
   -webkit-transform: translate3d(600px, 0, 0);
           transform: translate3d(600px, 0, 0);
-  -webkit-transition: all 0.4s ease-in;
-  transition: all 0.4s ease-in;
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
   margin-bottom: 1.4rem;
 }
 
@@ -159,8 +167,8 @@
   padding: 1rem 0;
   color: #fff;
   text-decoration: none;
-  -webkit-transition: all 0.4s ease-in;
-  transition: all 0.4s ease-in;
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
   position: relative;
 }
 
@@ -176,8 +184,8 @@
   -webkit-transform: translateY(-20px);
           transform: translateY(-20px);
   opacity: 0;
-  -webkit-transition: all 0.4s ease-in;
-  transition: all 0.4s ease-in;
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
 }
 
 .menu .nav-link:hover {
@@ -337,8 +345,8 @@ main .icons {
 
 main .icons a {
   padding: 0.7rem;
-  -webkit-transition: all 0.4s ease-in;
-  transition: all 0.4s ease-in;
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
 }
 
 main .icons a:hover {
@@ -346,8 +354,8 @@ main .icons a:hover {
 }
 
 main .icons a i {
-  -webkit-transition: all 0.4s ease-in;
-  transition: all 0.4s ease-in;
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
 }
 
 main .icons a i:hover {
@@ -376,17 +384,19 @@ main#home h1 {
   -ms-grid-column: 1;
   grid-area: bioimage;
   margin: auto;
-  border: #31c6e4 2px dashed;
+  border: #31c6e4 2px solid;
   width: 220px;
   height: 285px;
-  -webkit-transition: all 0.4s ease-in;
-  transition: all 0.4s ease-in;
+  border-radius: 5%;
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
 }
 
 .bio-image:hover {
-  border: #31c6e4 2px solid;
+  border: #31c6e4 2px dashed;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  border-radius: 50%;
 }
 
 .bio {
@@ -412,8 +422,8 @@ main#home h1 {
   font-size: 18px;
   font-weight: 500;
   text-transform: capitalize;
-  -webkit-transition: all 0.4s ease-in;
-  transition: all 0.4s ease-in;
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
 }
 
 .job-1 span:hover {
@@ -448,8 +458,8 @@ main#home h1 {
 .job p .cv-link i {
   color: #31c6e4;
   padding-top: .5rem;
-  -webkit-transition: all 0.4s ease-in;
-  transition: all 0.4s ease-in;
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
 }
 
 .job p .cv-link i:hover {
@@ -488,14 +498,15 @@ main#home h1 {
 .projects .p-content:hover img {
   opacity: 0.3;
   border-color: #31c6e4;
-  -webkit-transition: all 0.4s ease-in;
-  transition: all 0.4s ease-in;
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
 }
 
 .projects .p-name {
   position: absolute;
   font-weight: 500;
   position: absolute;
+  text-align: center;
   left: 50%;
   top: 35%;
   letter-spacing: 0.2rem;
@@ -504,8 +515,8 @@ main#home h1 {
   -webkit-transform: scale(0) translate(50%, 50%);
           transform: scale(0) translate(50%, 50%);
   color: #31c6e4;
-  -webkit-transition: all 0.4s ease-in;
-  transition: all 0.4s ease-in;
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
 }
 
 .boxes {
@@ -529,18 +540,18 @@ main#home h1 {
   padding: 1.5rem 2.5rem;
   margin-bottom: 3rem;
   cursor: pointer;
-  -webkit-transition: all 0.4s ease-in;
-  transition: all 0.4s ease-in;
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
 }
 
 .boxes div:hover {
   padding: 0.5rem 1.5rem;
   background: #31c6e4;
-  color: #000;
+  color: #fff;
 }
 
 .boxes div:hover span {
-  color: #000;
+  color: #fff;
 }
 
 .btn, .btn-light, .p-dark {
@@ -551,14 +562,17 @@ main#home h1 {
 
 .btn:hover, .btn-light:hover, .p-dark:hover {
   background-color: #31c6e4;
-  color: #000;
-  -webkit-transition: all 0.4s ease-in;
-  transition: all 0.4s ease-in;
+  color: #fff;
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
 }
 
 .btn-light {
   background: black;
   color: white;
+  text-align: center;
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
 }
 
 .p-dark {
@@ -566,7 +580,7 @@ main#home h1 {
   color: #333;
   margin: 0;
   font-weight: 500;
-  height: 100px;
+  height: 25%;
 }
 
 #main-footer {

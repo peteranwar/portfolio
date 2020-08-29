@@ -6,7 +6,7 @@ $home-image: url(../img/background.jpg);
 $background-opacity: 0.88;
 
 @mixin easeInOut {
-  transition: all 0.4s ease-in;
+  transition: all .7s ease;
 }
 
 
@@ -33,7 +33,7 @@ $background-opacity: 0.88;
 
 // Set Text Color
 @function set-text-color($color) {
-  @if (lightness($color) > 53) {
+  @if (lightness($color) > 55) {
     @return #000;
   } @else {
     @return #fff;

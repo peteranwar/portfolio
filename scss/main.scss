@@ -123,13 +123,15 @@ main {
 .bio-image {
   grid-area: bioimage;
   margin: auto;
-  border: $secondary-color 2px dashed;
+  border: $secondary-color 2px solid;
   width: 220px;
   height: 285px;
+  border-radius: 5%;
   @include easeInOut;
   &:hover {
-     border: $secondary-color 2px solid;
+     border: $secondary-color 2px dashed;
      transform: scale(1.1);
+     border-radius: 50%;
   }
 }
 
@@ -221,6 +223,7 @@ main {
       position: absolute;
       font-weight: 500;
       position: absolute;
+      text-align: center;
       left: 50%;
       top: 35%;
       letter-spacing: 0.2rem;
@@ -275,6 +278,8 @@ main {
   @extend .btn;
   background: darken($primary-color, 50);
   color: white;
+  text-align: center;
+  @include easeInOut;
 }
 
 .p-dark {
@@ -283,7 +288,7 @@ main {
   color: #333;
   margin: 0;
   font-weight: 500;
-  height: 100px;
+  height: 25%;
 }
 
 #main-footer {
