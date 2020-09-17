@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/all.min.css">
+    <link
+    rel="stylesheet"
+    href="./css/animate.min.css"
+  />
     <link rel="shortcut icon"  href="./img/projects/icon.jpg">
     <title>About Me</title>
 </head>
@@ -48,16 +52,17 @@
     </header>
 
     <main id="about">
-        <h1 class="lg-heading">
+        <h1 class="lg-heading animated zoomIn 
+        ">
             About <span class="text-secondary"> Me </span>
         </h1>
-        <h2 class="sm-heading">
+        <h2  class="sm-heading animated fadeInDownBig slow  ">
             Let me tell you a few things...
         </h2>
         <div class="about-info">
-            <img src="img/peter.jpg" alt="" class="bio-image">
+            <img src="img/peter.jpg" alt="" class="bio-image animated rollIn slow delay-1s">
 
-            <div class="bio">
+            <div class="bio animated zoomIn delay-2s">
                 <h3 class="text-secondary">BIO</h3>
                 <p  style="text-transform: capitalize;">seeking about new challenge as a junior front-End developer that allows me grow professionally , while being able to utilize my skills .<br>
                      joining a professional team trying to make use of all i have learned to make a positive effect and improve my personal and technical skills .
@@ -65,7 +70,8 @@
                 </p>
             </div>
 
-            <div class="job job-1">
+            <div class="job job-1 animated jackInTheBox delay-3s
+            ">
                 <h3> Skills :- </h3>
                 <!-- <h6>Full Stack Developer</h6> -->
                 <p>
@@ -75,6 +81,7 @@
                     <span>css3</span>
                     <span>sass</span>
                     <span>bootstrap</span>
+                    <span>Bulma</span>
                     <span>javascript</span>
                     <span>es6</span>
                     <span>Ajax</span>
@@ -88,7 +95,8 @@
                 </p>
             </div>
 
-            <div class="job job-2">
+            <div class="job job-2 animated jackInTheBox slow delay-4s
+">
                 <h3>cv :-</h3>
                 <!-- <h6>Fronr End Delevoper</h6> -->
                 <p>
@@ -101,7 +109,8 @@
                 </p>
             </div>
 
-            <div class="job job-3">
+            <div class="job job-3 animated jackInTheBox slower delay-5s
+">
                 <h3> Additional Info :-</h3>
                 <!-- <h6> Graphic Designer</h6> -->
                 <p>
@@ -123,6 +132,8 @@
     <footer id="main-footer">
         Copyright &copy; 2020
     </footer>
+
+    <script src="anime.min.js"></script>
     <script src="main.js"> </script>
 </body>
 

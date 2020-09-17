@@ -4,9 +4,9 @@
 * {
   box-sizing: border-box;
 }
-.secon-color{
-  color:$secondary-color;
-  }
+.secon-color {
+  color: $secondary-color;
+}
 body {
   @include background();
   background-color: $primary-color;
@@ -29,7 +29,7 @@ h3 {
   }
   &.sm-heading {
     margin-bottom: 2rem;
-    padding: 0 .2rem;
+    padding: 0 0.2rem;
     background: rgba(lighten($primary-color, 2), 0.5);
     // width: fit-content;
   }
@@ -129,9 +129,9 @@ main {
   border-radius: 5%;
   @include easeInOut;
   &:hover {
-     border: $secondary-color 2px dashed;
-     transform: scale(1.1);
-     border-radius: 50%;
+    border: $secondary-color 2px dashed;
+    transform: scale(1.1);
+    border-radius: 50%;
   }
 }
 
@@ -142,7 +142,7 @@ main {
 
 .job-1 {
   grid-area: job1;
-  span{
+  span {
     border: 1px solid #eee;
     padding: 2px 5px;
     margin: 5px 0;
@@ -172,19 +172,18 @@ main {
   background: lighten($primary-color, 5);
   padding: 0.5rem;
   border-bottom: $secondary-color 3px solid;
-  p{
-    
-    .cv-link{
+  p {
+    .cv-link {
       text-align: center;
       display: block;
-      
-      i{
+
+      i {
         color: $secondary-color;
-        padding-top: .5rem;
+        padding-top: 0.5rem;
         @include easeInOut;
         &:hover {
           color: #eee;
-          transform: scale(.9);
+          transform: scale(0.9);
         }
       }
     }
@@ -196,7 +195,7 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 0.7rem;
-   
+
   .item {
     margin-bottom: 1rem;
   }
@@ -207,32 +206,30 @@ main {
   }
   .p-content {
     position: relative;
-    &:hover .p-name{
-     transform:  scale(1) translate(-50%, -50%);
+    &:hover .p-name {
+      transform: scale(1) translate(-50%, -50%);
       // transform: scale(1);
-     }
-     &:hover img {
+    }
+    &:hover img {
       opacity: 0.3;
       border-color: $secondary-color;
       @include easeInOut;
     }
-    
   }
 
   .p-name {
-      position: absolute;
-      font-weight: 500;
-      position: absolute;
-      text-align: center;
-      left: 50%;
-      top: 35%;
-      letter-spacing: 0.2rem;
-      font-size: 1.5rem;
-      text-transform: uppercase;
-      transform:  scale(0) translate(50%, 50%);
-      color: $secondary-color ;
-      @include easeInOut;
-
+    position: absolute;
+    font-weight: 500;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 35%;
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    transform: scale(0) translate(50%, 50%);
+    color: $secondary-color;
+    @include easeInOut;
   }
 }
 
@@ -288,7 +285,7 @@ main {
   color: #333;
   margin: 0;
   font-weight: 500;
-  height: 25%;
+  // height: 25%;
 }
 
 #main-footer {
