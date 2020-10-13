@@ -2,8 +2,8 @@ $primary-color: #1b2125;
 // $secondary-color: #eece1a;
 $secondary-color: #31c6e4;
 $show-home-image: true;
-$home-image: url(../img/background.jpg);
-$background-opacity: 0.88;
+$home-image: url('../img/background (4).jpg');
+$background-opacity: 0.75;
 
 @mixin easeInOut {
   transition: all .7s ease;
@@ -16,7 +16,7 @@ $background-opacity: 0.88;
       background: $home-image;
       background-attachment: fixed;
       background-size: cover;
-      background-position-y: -100px;
+      // background-position-y: -100px;
       .over-lay {
         // or use pseudo elements (&:after)
         position: absolute;
