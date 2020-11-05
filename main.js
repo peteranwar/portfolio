@@ -4,11 +4,15 @@ const menu = document.querySelector(".menu");
 const menuNav = document.querySelector(".menu-nav");
 const menuBranding = document.querySelector(".menu-branding");
 const navItems = document.querySelectorAll(".nav-item");
+const navlinks = document.querySelectorAll(".nav-link");
 
 // set initial state of MENU
 let showMenu = false;
 
 menuBtn.addEventListener("click", toggleMenu);
+
+
+
 
 function toggleMenu() {
   if (!showMenu) {
@@ -31,3 +35,11 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+navlinks.forEach((navLink) => {
+  navLink.addEventListener("click", () => {
+      menuNav.querySelector(".current").classList.remove("current")
+
+      navLink.classList.add("current")
+    })
+})
