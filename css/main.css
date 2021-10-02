@@ -374,7 +374,8 @@ main#home h1 {
   display: -ms-grid;
   display: grid;
   grid-gap: 1.9rem;
-      grid-template-areas: "bioimage bio bio " "job1 job2 job3";
+      grid-template-areas: "bioimage bio bio "
+ "job1 job2 job3";
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
 }
@@ -616,6 +617,7 @@ main#home h1 {
 #main-footer {
   text-align: center;
   padding: 1rem;
+  padding-bottom: 2rem;
   background: #050708;
   color: #fff;
   height: 2.8rem;
@@ -677,7 +679,11 @@ main#home h1 {
     height: 150px;
   }
   .about-info {
-        grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+        grid-template-areas: "bioimage"
+ "bio"
+ "job1"
+ "job2"
+ "job3";
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
